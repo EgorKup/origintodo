@@ -1,0 +1,63 @@
+.all-button {
+    padding: 10px 20px;
+    background-color: #f7bdbd;
+    color: #000000;
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active-button {
+    padding: 10px 20px;
+    background-color: #f7bdbd;
+    color: #000000;
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.completed-button {
+    padding: 10px 20px;
+    background-color: #f7bdbd;
+    color: #000000;
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #f7bdbd;
+    color: #000000;
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+
+.checkbox-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
+
+
+
