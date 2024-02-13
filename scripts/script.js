@@ -7,7 +7,8 @@ const allButton = document.querySelector('.all-button');
 const activeButton = document.querySelector('.active-button');
 const completedButton = document.querySelector('.completed-button');
 const tasksList = document.querySelector('.tasks-list');
-let buttonDelete = document.querySelectorAll('.delete-button');
+const allButtonDelete = document.querySelector('.button-delete-all');
+const buttonDelete = document.querySelectorAll('.delete-button');
 
 
 // button add tasks
@@ -43,15 +44,13 @@ function renderTodos () {
     
 };
 
-//
+
 const deleteTask = (event) => {
-    console.log(event.target.id);
     const indexArrayTodo = arrayTodo.findIndex((element) => {
         element.id === event.target.id;
     });
     arrayTodo.splice(indexArrayTodo, 1);
     renderTodos();
-    console.log(arrayTodo);
 };
 
 // includes all checkbox
@@ -73,11 +72,19 @@ const checkTaskDivClicks = (event) => {
     }
 }
 
+const allDeleteTasks = (event) => {
+    for(let i = 0; i<arrayTodo.length; i++){
+        if(arrayTodo.isChecked == true) {
+            console.log('11111');
+        }
+    }
+};
 
 buttonAdd.addEventListener('click', addTodo);
 inputTodo.addEventListener('keypress', addTodo); // enter
 checkboxTasks.addEventListener('change', checkboxAll);
 tasksList.addEventListener('click', checkTaskDivClicks);
+allButtonDelete.addEventListener('click', allDeleteTasks);
 
 //??изменение текста по двойному щелчку?? --черновой вариант--
 function enableEditing() {
